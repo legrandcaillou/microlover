@@ -1,28 +1,192 @@
-header{
+header {
     display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
 }
 
-
-
-
-.logo{
+.logo {
     font-size: 40px;
-    font-weight: 500; 
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
 
-.logo span{
+.logo span {
     color: blue;
 }
 
-ul{
+ul {
     display: flex;
 }
 
 ul li {
     padding: 8px 12px;
     list-style: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+}
+
+ul li a:hover {
+    color: blue;
+    border-bottom: 2px solid
+}
+
+ul li:last-child a:hover {
+    color: blue;
+    border-bottom: none;
+}
+
+.presentation {
+    padding: 5px 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+.presentation span{
+    color: blue;
+}
+
+.presentation h1 {
+    font-size: 50px;
+   
+}
+
+.argument {
+    color: blue;
+}
+
+.presentation p {
+    max-width: 45%;
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: blue;
+    padding: 8px 12px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.button {
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    margin-top: 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    letter-spacing: 5px;
+}
+
+.quarter-circle {
+    position: fixed;
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 100%;
+}
+
+.quarter-circle-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.quarter-circle-img img {
+    width: 90%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.quarter-circle-img img:hover {
+    transform: scale(0.75);
+}
+
+
+
+
+
+@media all and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 5% 0;
+    }
+
+    ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: black;
+        margin: 5px 0;
+        border-top: 2px solid var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    ul li a {
+        color: var(--secondary-color);
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .logo span,
+    .active {
+        color: var(--secondary-color);
+    }
+
+    .quarter-circle {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+
+    }
+
+    nav button {
+        text-align: center;
+        border: 2px solid var(--secondary-color);
+        width: 160px;
+        margin: 5px;
+    }
+
+    .presentation {
+        padding: 5px;
+    }
+
+    .presentation h1 {
+        font-size: 20px;
+    }
+
+    .presentation p {
+        width: 90%;
+        max-width: unset;
+    }
+
+    .button {
+        margin: auto;
+    }
 }
