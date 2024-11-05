@@ -1,0 +1,28 @@
+header{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+
+
+
+
+.logo{
+    font-size: 40px;
+    font-weight: 500; 
+    font-family: "Poppins", sans-serif;
+}
+
+.logo span{
+    color: blue;
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    padding: 8px 12px;
+    list-style: none;
+}
